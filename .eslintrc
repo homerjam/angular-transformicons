@@ -1,0 +1,17 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "comma-dangle": [1, "always-multiline"],
+    "prefer-const": 0,
+    "no-shadow": 0,
+    "no-param-reassign": 0,
+    "no-var": 0,
+    "vars-on-top": 0,
+    "padded-blocks": 0,
+    "space-before-function-paren": 0,
+    "global-require": 0,
+    "prefer-template": 1,
+    "max-len": 1,
+    "arrow-body-style": 1
+  }
+}

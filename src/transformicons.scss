@@ -1,0 +1,24 @@
+$tcon-menu-radius: 0;
+$tcon-menu-color: currentColor;
+
+$tcon-plus-color: currentColor;
+$tcon-remove-color: currentColor;
+
+$tcon-grid-color: currentColor;
+
+$spinner_color: currentColor;
+$spinner_bg: currentColor;
+$spinner_inner_bg: currentColor;
+
+$tcon-search-color: currentColor;
+$tcon-search-glass-color: currentColor;
+
+$tcon-svgchevron-color: currentColor;
+
+$tcon-vidplay-color: currentColor;
+
+button {
+  color: currentColor;
+}
+
+@import '../node_modules/Transformicons/dist/sass/index/_tcons.scss';

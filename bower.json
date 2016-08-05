@@ -1,0 +1,22 @@
+{
+  "name": "angular-transformicons",
+  "version": "0.0.0",
+  "description": "Angular directive to quickly include Transformicons in your templates",
+  "main": "./angular-transformicons.js",
+  "authors": [
+    "Homerjam <jameshomer85@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/homerjam/angular-transformicons",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7"
+  }
+}
