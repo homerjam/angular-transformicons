@@ -51,14 +51,32 @@ transformicons.forEach(transformicon => {
         restrict: 'EA',
         replace: true,
         template: transformicon.template,
+        scope: {
+          bindTransfrom: '=',
+          bindEvents: '=',
+        },
         link: ($scope, $element) => {
-          $element.on('click', () => {
-            if ($element.hasClass(TRANSFORM_CLASS)) {
-              $element.removeClass(TRANSFORM_CLASS);
-            } else {
+
+          $scope.$watch('bindTransfrom', (transform) => {
+            if (transform === true) {
               $element.addClass(TRANSFORM_CLASS);
+            } else {
+              $element.removeClass(TRANSFORM_CLASS);
             }
           });
+
+          if ($scope.bindEvents) {
+
+            $element.on('click', () => {
+              if ($element.hasClass(TRANSFORM_CLASS)) {
+                $element.removeClass(TRANSFORM_CLASS);
+              } else {
+                $element.addClass(TRANSFORM_CLASS);
+              }
+            });
+
+          }
+
         },
       };
     });

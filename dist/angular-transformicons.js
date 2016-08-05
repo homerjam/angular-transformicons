@@ -88,14 +88,30 @@ return /******/ (function(modules) { // webpackBootstrap
 	      restrict: 'EA',
 	      replace: true,
 	      template: transformicon.template,
+	      scope: {
+	        bindTransfrom: '=',
+	        bindEvents: '='
+	      },
 	      link: function link($scope, $element) {
-	        $element.on('click', function () {
-	          if ($element.hasClass(TRANSFORM_CLASS)) {
-	            $element.removeClass(TRANSFORM_CLASS);
-	          } else {
+	
+	        $scope.$watch('bindTransfrom', function (transform) {
+	          if (transform === true) {
 	            $element.addClass(TRANSFORM_CLASS);
+	          } else {
+	            $element.removeClass(TRANSFORM_CLASS);
 	          }
 	        });
+	
+	        if ($scope.bindEvents) {
+	
+	          $element.on('click', function () {
+	            if ($element.hasClass(TRANSFORM_CLASS)) {
+	              $element.removeClass(TRANSFORM_CLASS);
+	            } else {
+	              $element.addClass(TRANSFORM_CLASS);
+	            }
+	          });
+	        }
 	      }
 	    };
 	  });
