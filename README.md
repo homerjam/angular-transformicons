@@ -1,4 +1,4 @@
-# angular-scroll-magic
+# angular-transformicons
 
 Angular directive to quickly include [Transformicons](http://www.transformicons.com/) in your templates
 
