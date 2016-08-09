@@ -1,9 +1,13 @@
+$tcon-size: 4rem !default;
+
 $tcon-menu-radius: 0;
 $tcon-menu-color: currentColor;
 
 $tcon-plus-color: currentColor;
 $tcon-remove-color: currentColor;
 
+$tcon-grid-base: 0.6rem !default;
+$tcon-grid-space: ($tcon-grid-base / 2) !default;
 $tcon-grid-color: currentColor;
 
 $spinner_color: currentColor;

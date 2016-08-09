@@ -52,12 +52,12 @@ transformicons.forEach(transformicon => {
         replace: true,
         template: transformicon.template,
         scope: {
-          bindTransfrom: '=',
+          bindTransform: '=',
           bindEvents: '=',
         },
         link: ($scope, $element) => {
 
-          $scope.$watch('bindTransfrom', (transform) => {
+          $scope.$watch('bindTransform', (transform) => {
             if (transform === true) {
               $element.addClass(TRANSFORM_CLASS);
             } else {
@@ -66,7 +66,6 @@ transformicons.forEach(transformicon => {
           });
 
           if ($scope.bindEvents) {
-
             $element.on('click', () => {
               if ($element.hasClass(TRANSFORM_CLASS)) {
                 $element.removeClass(TRANSFORM_CLASS);
@@ -74,7 +73,6 @@ transformicons.forEach(transformicon => {
                 $element.addClass(TRANSFORM_CLASS);
               }
             });
-
           }
 
         },
