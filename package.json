@@ -6,35 +6,34 @@
     "type": "git",
     "url": "https://github.com/homerjam/angular-transformicons"
   },
+  "main": "dist/angular-transformicons.cjs.js",
+  "module": "dist/angular-transformicons.esm.js",
+  "browser": "dist/angular-transformicons.umd.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --inline --open"
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
   },
-  "author": "Homerjam <jameshomer85@gmail.com>",
+  "author": "homerjam <jameshomer85@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "angular": "^1.5.7"
+    "angular": "^1.6.9",
+    "transformicons": "github:transformicons/transformicons"
   },
   "devDependencies": {
-    "Transformicons": "github:grayghostvisuals/transformicons",
-    "autoprefixer-loader": "^3.2.0",
-    "babel": "^6.5.2",
-    "babel-loader": "^6.2.4",
-    "babel-polyfill": "^6.9.1",
-    "babel-preset-es2015": "^6.9.0",
-    "babelify": "^7.3.0",
-    "browserify": "^13.0.1",
-    "css-loader": "^0.23.1",
-    "exorcist": "^0.4.0",
-    "expose-loader": "^0.7.1",
-    "gulp": "^3.9.1",
-    "gulp-webserver": "^0.9.1",
-    "raw-loader": "^0.5.1",
-    "sass-loader": "^4.0.0",
-    "style-loader": "^0.13.1",
-    "uglifyjs": "^2.4.10",
-    "watchify": "^3.7.0",
-    "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "autoprefixer": "^7.2.5",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.6.1",
+    "node-sass": "^4.7.2",
+    "rollup": "^0.55.3",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^8.3.0",
+    "rollup-plugin-handlebars-plus": "^0.2.3",
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "rollup-plugin-postcss": "^1.2.8",
+    "rollup-plugin-uglify": "^3.0.0"
   }
 }

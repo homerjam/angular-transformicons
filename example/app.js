@@ -1,12 +1,11 @@
+/* global angular */
+
 angular.module('ExampleApp', ['hj.transformicons'])
 
-  .config([function () {
-
-  }])
-
   .controller('ExampleCtrl', ['$scope',
-    function ($scope) {
+    function ExampleCtrl () {
       var vm = this;
 
+      vm.transform = false;
     },
   ]);
