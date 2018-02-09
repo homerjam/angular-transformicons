@@ -30,7 +30,7 @@ export default [
   },
   {
     input: 'src/main.js',
-    external: ['angular'],
+    external: [],
     output: [
       { file: pkg.main, format: 'cjs' },
       { file: pkg.module, format: 'es' },

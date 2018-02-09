@@ -1,4 +1,4 @@
-import angular from 'angular';
+/* global angular */
 
 import addrmPlusCheck from 'transformicons/site/templates/includes/tcons/addrm-plus-check.hbs';
 import addrmPlusCircle from 'transformicons/site/templates/includes/tcons/addrm-plus-circle.hbs';
