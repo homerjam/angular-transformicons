@@ -1,6 +1,6 @@
 {
   "name": "angular-transformicons",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Angular directive to quickly include Transformicons in your templates",
   "repository": {
     "type": "git",
