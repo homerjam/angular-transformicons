@@ -91,8 +91,8 @@ angular.forEach(transformicons, (template, name) => {
       replace: true,
       template: template(),
       scope: {
-        bindTransform: '=',
-        bindEvents: '=',
+        bindTransform: '=?',
+        bindEvents: '=?',
       },
       link: ($scope, $element) => {
 
